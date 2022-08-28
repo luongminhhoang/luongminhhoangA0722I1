@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let laisuathang = parseFloat(prompt("lãi hàng tháng"));
+    let sothangvay = parseInt(prompt("số tháng vay"))
+    let sotienmuon = parseInt(prompt("số tiền mượn"))
+    let tongtien = sotienmuon*(1+sothangvay*laisuathang) ;
+    let sotienlai = sotienmuon * sothangvay*laisuathang;
+    alert("tổng tiền phải trả là : " + tongtien +"<br>"+ "số tiền lãi là : " + sotienlai)
+
+</script>
+
+</body>
+</html>

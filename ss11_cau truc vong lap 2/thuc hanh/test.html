@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = 2 ;
+    let count2=0;
+
+
+    while (count2 < 20){
+        let count = 0;
+        for (let i=2;i<=Math.sqrt(number);i++){
+
+            if (number % i===0){
+                count++;
+                break;
+            }
+
+        }
+        if (count===0){
+           document.writeln(number + "")
+
+           count2++
+        }
+        number++
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let F0=0,F=1,F1=0;
+    let total=0;
+    for (let i=0;i<20;i++){
+        F1=F+F0;
+        F=F0;
+        F0=F1;
+        total+=F1
+
+
+    }
+    document.writeln(total)
+</script>
+</body>
+</html>

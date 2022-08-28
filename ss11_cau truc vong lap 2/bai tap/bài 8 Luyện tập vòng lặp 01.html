@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button" onclick="clickme()">click me</button>
+<script>
+    function clickme() {
+        let phamvi= parseInt(prompt("nhập khoảng từ 0-"))
+        let doanso = parseInt(prompt("nhập số đoán"))
+        let sorandom;
+        if (phamvi){
+            sorandom=Math.floor(Math.random()*phamvi)
+            if (doanso==sorandom){
+                alert("bạn đẫ đoán đúng")
+            }else {
+                while (doanso!=sorandom){
+                    alert("bạn đã đoán sai");
+                    doanso = parseInt(prompt("xin mời nhập lại"))
+
+                }
+                alert("bạn đẫ đoán đúng")
+            }
+        }
+
+    }
+</script>
+</body>
+</html>

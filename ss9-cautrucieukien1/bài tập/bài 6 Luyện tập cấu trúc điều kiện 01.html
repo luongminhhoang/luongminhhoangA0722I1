@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let doanhso = parseInt(prompt("nhập doanh số tháng này"))
+    let hoahong ;
+    if (doanhso>1000){
+        hoahong = doanhso*25/100;
+        alert("hoa hồng nhận được là :" + hoahong)
+
+    }else if(doanhso>500){
+        hoahong = doanhso*15 / 100 ;
+        alert("hoa hồng nhận được là :" + hoahong)
+    }else if ( doanhso > 0){
+        hoahong = doanhso * 5 /100 ;
+        alert("hoa hồng nhận được là :" + hoahong)
+    }else {
+        alert("bạn không có hoa hồng ")
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> GIẢI PHƯƠNG TRÌNH BẬC NHẤT AX+B=0</h1><BR>
+
+ <label> a =  <input type="text" id="a"> </label><br>
+ <label> b =  <input type="text" id="b"> </label><br>
+ <button type="button" onclick="giaiphuongtrinhbac1()" >kết quả</button><br>
+<div id = "result"></div>
+<script>
+    function giaiphuongtrinhbac1() {
+        let a = parseInt(document.getElementById("a").value )
+        let b = parseInt(document.getElementById("b").value )
+        if (a==0 && b==0){
+            document.getElementById("result").innerText="phương trình có vô số nghiệm"
+        }else if (a==0 && b>0||b<0 ){
+            document.getElementById("result").innerText="phương trình vô nghiệm"
+        }else {
+            let  x = (-b)/a;
+            document.getElementById("result").innerText = "phương trình có nghiệm là  : " + x ;
+        }
+
+    }
+</script>
+
+
+</body>
+</html>

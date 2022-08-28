@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let luong = parseInt(prompt("thu nhập hàng tháng"))
+    let thuephaidong ;
+    if (luong>14000){
+        thuephaidong = luong * 20 /100 ;
+        alert("thuế phải đóng là  " + thuephaidong)
+    }else if (9000<=luong<14000){
+        thuephaidong = luong * 15 / 100 ;
+        alert("thuế phải đóng là  " + thuephaidong)
+    }else if (6000<=luong<9000){
+        thuephaidong = luong *10/100;
+        alert("thuế phải đóng là  " + thuephaidong)
+    }else if (4000<= luong <6000){
+        thuephaidong = luong * 5/100
+    }else if (0<luong<4000){
+        thuephaidong = luong ;
+        alert("thuế phải đóng là  " + thuephaidong)
+    }else {
+        alert ("lương không hợp lệ ")
+    }
+</script>
+</body>
+</html>

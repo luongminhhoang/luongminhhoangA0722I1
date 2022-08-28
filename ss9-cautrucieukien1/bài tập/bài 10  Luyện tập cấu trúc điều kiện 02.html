@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("lượng điện mỗi tháng dùng là :"))
+    let tiendien ;
+
+    if (a>150){
+        tiendien = a * 1200 ;
+        alert("tiền điện phải trả là : " + tiendien)
+    }else  if (100<a<=150){
+        tiendien = a * 1100;
+        alert("tiền điện phải trả là : " + tiendien)
+    }else if (0<a<=100){
+        tiendien = a * 950 ;
+        alert("tiền điện phải trả là : " + tiendien)
+    }else {
+        alert("không có tiền điên phải trả")
+    }
+</script>
+</body>
+</html>

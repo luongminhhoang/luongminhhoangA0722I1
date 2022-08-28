@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th><label >Amount</label></th>
+            <th><label > From Currency</label></th>
+            <th><label >To Currency</label></th>
+            <th></th>
+        </tr>
+        <tr>
+            <td><input id="input" type="text"></td>
+            <td>
+                <select id="from">
+                    <option value="1" >Việt Nam </option>
+                    <option value="23000" >USD </option>
+
+                </select>
+            </td>
+            <td>
+                <select id="to">
+                    <option value="23000" > USD</option>
+                    <option value="1" >Việt Nam </option>
+
+                </select>
+            </td>
+            <td> <button onclick="display()">Convert</button></td>
+
+        </tr>
+    </table>
+<h2> Result <span id="result"></span></h2>
+<script>
+    function display() {
+     let   input = document.getElementById("input").value;
+       let from = document.getElementById("from").value;
+        let to = document.getElementById("to").value;
+        document.getElementById("result").innerText= (input*from/to).toFixed(4)
+
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let baikiemtra = parseInt(prompt("điểm bài kiếm tra"))
+    let diemgiuaky = parseInt(prompt("điểm giữa kỳ"))
+    let diemcuoiky = parseInt(prompt("điểm cuối kỳ"))
+    let ketqua =  ((baikiemtra + diemgiuaky + diemcuoiky) / 3) ;
+
+    if (ketqua > 8){
+        alert("học si giỏi")
+    }else if (ketqua >7){
+        alert("học sinh khá")
+    }else if (ketqua >6){
+        alert("học sinh trung bình")
+    }else if (ketqua  >5){
+        alert("học sinh yếu")
+    }else {
+        alert("học sinh kém")
+    }
+    alert(ketqua)
+</script>
+</body>
+</html>
