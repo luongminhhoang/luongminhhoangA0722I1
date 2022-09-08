@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n=parseInt(prompt("phân tử cần in"))
+    let array=[];
+    let total=0;
+    for (let i=0 ; i<n ;i++){
+        array[i]=parseInt(prompt("nhâp mảng" + i ))
+        total+=array[i];
+    }
+    let max = array[0];
+    for (let j=1;j<array.length;j++){
+        if (array[j]>max){
+            max=array[j]
+        }
+    }
+    let trungbinh = total/n ;
+    document.writeln("mảng array nhập vào là :"+array + "<br>"+ "số lớn nhất trong mảng là :" + max +"<br>")
+    document.writeln("trung bình của mảng là " + trungbinh)
+
+
+
+</script>
+</body>
+</html>

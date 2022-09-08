@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button" onclick="nhaptenngoisao(prompt('nhập tên ngôi sao'))"> nhập tên ngôi sao</button>
+<script>
+    function nhaptenngoisao(input) {
+        let array1=['Polaris','Aldebaran','Deneb','Vega','Altair','Dubhe' ,'Regulus']
+        let array2=['Ursa Minor','Tarurus','Cygnus','Lyra','Aquila','Ursa Major','Leo']
+            let index=-1;
+        for (let i=0;i<array1.length;i++){
+            if (array1[i]==input){
+                input=array2[i];
+                alert(input);
+                index=i;
+                break
+            }
+
+        }
+        if(index == -1){
+            alert("Không tồn tại");
+        }
+
+
+
+
+    }
+</script>
+</body>
+</html>

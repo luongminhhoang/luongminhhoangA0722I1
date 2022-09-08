@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="tienganh">
+<button type="button" onclick="dich()">dịch</button>
+<div id="result"></div>
+<script>
+
+function dich() {
+    let tienganh=["bird","dog","cat","elephant"]
+    let tiengviet=["chim","chó","mèo","voi"]
+    let input = document.getElementById("tienganh").value ;
+    for (let i=0 ; i<tienganh.length;i++){
+        if (tienganh[i]==input){
+            input=tiengviet[i];
+        }
+    }
+    document.getElementById("result").innerText= input ;
+
+}
+</script>
+</body>
+</html>

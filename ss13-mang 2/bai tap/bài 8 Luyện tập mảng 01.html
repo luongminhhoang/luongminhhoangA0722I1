@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<SCRIPT>
+let n = parseInt(prompt("nhập phân tử mảng cần in"))
+    let arr =[]
+    for (let i=0 ;i<n;i++){
+        arr[i]=parseInt(prompt("nhập phân tử vào mảng"))
+    }
+    let temp ;
+   for (let i=0;i<arr.length-1;i++){
+       for (let j=i+1;j<arr.length;j++){
+           if (arr[i]<arr[j]){
+           temp=arr[j];
+           arr[j]=arr[i]
+               arr[i]=temp;
+
+           }
+       }
+   }
+    alert(arr)
+
+</SCRIPT>
+</body>
+</html>

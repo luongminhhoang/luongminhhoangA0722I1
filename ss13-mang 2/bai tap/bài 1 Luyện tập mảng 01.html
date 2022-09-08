@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    let n = parseInt(prompt("nhập số mảng phân tử cần in"))
+    let input =[]
+    for (let j=0;j<n;j++){
+        input[j]=parseInt(prompt("phân tử thứ j :" + j))
+    }
+    let result=[]
+    let count = 0 ;
+    for (let i=0;i<10;i++){
+        if (input[i]>=10){
+            result.push(input[i])
+            count++
+        }
+    }
+    document.writeln( "có"+ count + "số nguyên lớn hơn hoặc bằng 10 là :" + result)
+
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n =parseInt(prompt("nhập số phần tử cần in"))
+    let arraya = [];
+    let arrayc = [] ;
+    let arrayb = [];
+    for (let i=0;i<n;i++){
+        arraya[i]=parseInt(prompt("nhập mảng a"))
+        arrayb[i]=parseInt(prompt("nhập mảng b"))
+    }
+     arrayc = arraya.concat(arrayb) ;
+    document.writeln(arrayc)
+</script>
+
+</body>
+</html>

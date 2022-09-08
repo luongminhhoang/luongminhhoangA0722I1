@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isPrime(number) {
+
+            let  check=0;
+            let count =0 ;
+            let result=[] ;
+            for (let i=2;i>0;i++){
+                for (let j=2;j<=i;j++){
+                    if (i%j==0){
+                        check++;
+                    }
+                }
+                if (check==1){
+                    count++
+                   result.push(i)
+
+                }
+                if (count==number){
+                    break;
+                }
+                check=0;
+            }
+        document.writeln("các số nguyên tố là " +result.toString())
+    }
+  isPrime(20);
+
+</script>
+</body>
+</html>

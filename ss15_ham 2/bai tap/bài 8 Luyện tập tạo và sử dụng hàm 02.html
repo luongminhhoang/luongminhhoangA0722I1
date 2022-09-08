@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr=[];
+    for (let i=0;i<5;i++){
+        arr[i]=parseInt(prompt("nhập mảng"))
+    }
+    function daomang(arr) {
+        for (let i = 0; i < arr.length-1; i++) {
+            let end  = arr.length-1;
+            let temp = " ";
+            temp = arr[i]
+            arr[i] = arr[end]
+            arr[end] = temp
+            end--
+        }
+        return arr;
+
+    }
+    console.log(arr)
+    let result = daomang(arr);
+    document.writeln(result)
+</script>
+</body>
+</html>

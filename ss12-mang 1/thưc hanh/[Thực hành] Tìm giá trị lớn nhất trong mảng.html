@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array=[-1,2,3,4,5,6]
+    let max = array[0];
+    let index;
+    for (let i=1;i<array.length;i++){
+        if (array[i]>max){
+            max=array[i];
+            index = i;
+        }
+    }
+    document.writeln("số lớn nhất là :" +  max + "tai vị trí : " + index)
+</script>
+</body>
+</html>

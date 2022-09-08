@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function demsolantrongmang(arr,x) {
+            let count=0;
+            for (let i=0;i<arr.length;i++){
+                if (arr[i]===x){
+                    count++
+                }else {
+                    count=-1;
+                }
+            }
+            return count ;
+
+
+    }
+    let array = [];
+    for (let i=0;i<5;i++){
+        array[i]=parseInt(prompt("nhâp mảng"));
+    }
+    let x = parseInt(prompt("số cần tìm"))
+  let a = demsolantrongmang(array,x);
+  document.writeln( "ta có mảng là "+array +"<br>"+ "số cần tìm trong mảng là :" + x+"<br>" + "số lần xuất hiện của x là : " + a)
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt("nhập số phân tử cần in"))
+    let input =[];
+    for (let i=0;i<n;i++){
+        input[i]=parseInt(prompt("số phân tử thứ" + i))
+    }
+    let max=input[0];
+    for (let j=1;j<input.length;j++){
+        if (input[j]>max){
+            max = input[j];
+        }
+    }
+    document.writeln("mảng của input là :" + input+"<br>" + "số lớn nhất trong mảng là :" + max)
+</script>
+</body>
+</html>
